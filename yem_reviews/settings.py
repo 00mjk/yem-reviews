@@ -86,13 +86,17 @@ WSGI_APPLICATION = 'yem_reviews.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+
+
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'yem_reviews',
         'USER': 'yemi',
         'PASSWORD': 'lanre',
-        'HOST': 'localhost',
+        'HOST': '',
         'PORT': '',
     }
 }
