@@ -18,7 +18,10 @@ SECRET_KEY = env('SECRET_KEY')
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'yemreviews.herokuapp.com',
+    'localhost',
+]
 
 
 # Application definition
