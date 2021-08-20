@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load tailwind_filters %}
+{% block content %}
+
+        <a href="{% url 'movies:movie-list' %}">Go back to Movies</a>
+       
+
+    <!--  Movie Creation Form  -->
+
+    <div class="flex w-full justify-center items-end">
+        <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+          <label for="hero-field" class="leading-7 text-sm text-gray-600">Add movie here</label>
+
+<!-- You didn't add enctype="multipart/form-data" to <form>. It is needed to work with media files on django and all other platforms -->
+<!-- else only text will be sent  -->
+
+          <form class="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" value="Submit" class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Submit</button>
+        </form>
+        </div> 
+    </div>
+
+ {% endblock content %}
