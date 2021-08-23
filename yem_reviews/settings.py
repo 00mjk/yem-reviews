@@ -2,6 +2,7 @@ from pathlib import Path
 from django.conf.global_settings import AUTH_USER_MODEL, EMAIL_BACKEND, STATICFILES_DIRS
 import os
 import environ
+import dj_database_url
 
 env = environ.Env(
     DEBUG=(bool, False)
@@ -93,13 +94,15 @@ WSGI_APPLICATION = 'yem_reviews.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'yem_reviews',
-        'USER': 'yemi',
-        'PASSWORD': 'lanre',
-        'HOST': '',
-        'PORT': '',
+        'NAME': 'ddk743kbk3n5a7',
+        'USER': 'rwbidssrdnbifz',
+        'PASSWORD': '44e158eebc9c29f73173e13b106541198bd72e57f14c94ad97db2093ab96c8ca',
+        'HOST': 'ec2-52-71-231-37.compute-1.amazonaws.com',
+        'PORT': '5432',
+
     }
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -193,3 +196,4 @@ CRISPY_TEMPLATE_PACK = "tailwind"
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
