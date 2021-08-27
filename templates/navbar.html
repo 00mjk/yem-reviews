@@ -9,6 +9,12 @@
       <div class="collapse navbar-collapse" id="navbarToggle">
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
           <a href="{% url 'landing-page' %}" class="mr-5 hover:text-red-500">Home</a>
+          <a href="{% url 'landing-page' %}" class="mr-5 hover:text-red-500">Categories</a>
+          <a href="{% url 'landing-page' %}" class="mr-5 hover:text-red-500">Reviews</a>
+          <a href="{% url 'landing-page' %}" class="mr-5 hover:text-red-500">News</a>
+          <a href="{% url 'landing-page' %}" class="mr-5 hover:text-red-500">Shop
+            <i class="fas fa-shopping-cart"></i>
+          </a>
           {% if request.user.is_authenticated %}
             Logged in as: {{ request.user.username }}
             <a href="{% url 'logout' %}"class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mx-auto ml-5 md:mt-0">Logout</a>
