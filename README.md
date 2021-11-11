@@ -10,6 +10,11 @@ This is an app for reviewing movies. You can add a new movie, comment on and rev
 - Django
 - HTML & CSS
 
+#### Deployment
+
+- Used Heroku and AWS
+- Changed database from SQlite to PostgreSQL
+
 ### Getting Started
 
 1. Create an account
