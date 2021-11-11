@@ -1,6 +1,6 @@
 # yem-reviews
 
-#About the Project
+## About the Project
 
 This is an app for reviewing movies. You can add a new movie, comment on and review the movie. Only an admin can add a movie.
 
