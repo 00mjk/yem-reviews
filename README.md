@@ -2,4 +2,4 @@
 
 WEBSITE LINK
 
-https://www.yemreviews.herokuapp.com
+https://yemreviews.herokuapp.com
